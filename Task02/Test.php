@@ -19,28 +19,27 @@ function runTest(): void
    echo "Получено: " . $v3 . PHP_EOL;
    echo PHP_EOL;
 
-   // Subtracting test
-   $v4 = $v3->sub($v2);
-   echo "Ожидается: (1; 2; 3)" . PHP_EOL;
+   //Subtracting test
+   $v4 = $v1->sub($v3);
+   echo "Ожидается: (-1; -4; 2)" . PHP_EOL;
    echo "Получено: " . $v4 . PHP_EOL;
    echo PHP_EOL;
 
-   // Number multiplication test
-   $v5 = $v1->product(-3);
-   echo "Ожидается: (-3; -6; -9)" . PHP_EOL;
+   //Number multiplication test
+   $v5 = $v1->product(6);
+   echo "Ожидается: (6; 12; 18)" . PHP_EOL;
    echo "Получено: " . $v5 . PHP_EOL;
    echo PHP_EOL;
 
-   // Dot product test
-   $scalar = $v1->scalarProduct(new Vector(2, 3, 4));  
-   echo "Ожидается: 20" . PHP_EOL;
+   //Dot product test
+   $scalar = $v1->scalarProduct($v2);  
+   echo "Ожидается: 3" . PHP_EOL;
    echo "Получено: " . $scalar . PHP_EOL;
    echo PHP_EOL;
 
-   // Cross product test
-   $v6 = $v1->vectorProduct(new Vector(0, 1, 0));
-   echo "Ожидается: (3; 0; -1)" . PHP_EOL;
+   //Cross product test
+   $v6 = $v1->vectorProduct($v4);
+   echo "Ожидается: (16; -5; -2)" . PHP_EOL;
    echo "Получено: " . $v6 . PHP_EOL;
    echo PHP_EOL;
-}
-?>
+} ?>

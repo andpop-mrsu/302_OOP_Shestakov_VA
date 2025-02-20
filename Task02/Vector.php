@@ -11,7 +11,7 @@ class Vector
 
     public function __construct($x, $y, $z)
     {
-        if(is_numeric($x) || !is_numeric($y) || !is_numeric($z)){
+        if(!is_numeric($x) || !is_numeric($y) || !is_numeric($z)){
             throw new \InvalidArgumentException('Координаты должны быть числовыми значениями');
         }
         $this->x = (float) $x;
