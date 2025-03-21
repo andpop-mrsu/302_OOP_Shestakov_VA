@@ -1,5 +1,5 @@
 {
-    "name": "godneverforget/task04",
+    "name": "Baklaniso/task04",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
