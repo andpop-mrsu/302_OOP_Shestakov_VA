@@ -1,0 +1,14 @@
+{
+    "name": "baklanis/task06_2",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
